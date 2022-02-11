@@ -54,7 +54,7 @@ make_lemma_dictionary <- function(..., engine = 'hunspell', path = NULL,
             ))
 
             out <- dplyr::rename(dplyr::arrange(dplyr::distinct(dplyr::filter(
-                tagged.results@TT.res[c("token", "lemma")],
+                tagged.results@token[c("token", "lemma")],
                 !lemma %in% c("<unknown>", '@card@') & nchar(token) > 1 & token != tolower(lemma)
             )), token), lemma = lemma)
         },
