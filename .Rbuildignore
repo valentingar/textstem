@@ -22,3 +22,4 @@ tools/textstem_logo/resize_icon.txt
 inst/staticdocs
 inst/extra_statdoc
 
+^textstem\.Rproj$
